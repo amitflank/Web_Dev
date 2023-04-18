@@ -10,8 +10,8 @@
 
 
 img {
-  width: 250px;
-  height: 250px;
+  width: 350px;
+  height: 350px;
   object-fit: cover;
   margin-bottom: 10px;
 }
@@ -32,6 +32,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #f2f2f2;
 }
 
 .menu ul {
@@ -50,7 +51,7 @@ nav {
   text-decoration: none;
   color: black;
   font-family: 'Shadows Into Light', cursive;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 nav a:hover {
@@ -64,6 +65,7 @@ nav a:hover {
 }
 .home{
   background-color: #f2f2f2;
+  margin-top:30px;
 }
 
 .container,
@@ -81,7 +83,7 @@ nav a:hover {
   height: 60vh;
 }
 #asterisk {
-  font-size: 14px;
+  font-size: 24px;
 }
 
 .image-container,
@@ -89,11 +91,16 @@ nav a:hover {
   flex: 1 1 300px;
   max-width: 50%;
   padding: 1rem;
+  min-width: 280px; /* Set a minimum width to avoid the container becoming too small */
+
 }
 
+.image-container{
+  text-align: center;
+}
 .text-container p {
   font-family: 'Dongle', sans-serif;
-  font-size: 20px;
+  font-size: 35px;
   line-height: 1.5;
 }
 
@@ -105,7 +112,7 @@ nav a:hover {
   text-align: center;
   font-family: 'Dongle', sans-serif;
   color: white;
-  font-size: 30px;
+  font-size: 40px;
   margin: 15%;
 }
 
@@ -136,6 +143,7 @@ button {
   box-shadow: 0 0 20px #eee;
   border-radius: 10px;
   border-style: none;
+  font-size: 3  0px;
 }
 
 button:hover {
@@ -150,21 +158,33 @@ button:hover {
 
 .short-text { display: none; }
 
+@media (max-width: 1400px){
+  .text-container p{
+    font-size: 25px;
+  }
+}
+
 
 /* Media query for smaller screens */
-@media (max-width: 768px) {
-  .container {
+@media (max-width: 860px) {
+  .container, .home_container {
     flex-direction: column;
     height: auto;
   }
-  
+  #button_text{
+    font-size: 30px;
+  }
+
   .short-text { display: inline-block; }
   .full-text { display: none; }
 
   .image-container,
   .text-container {
     max-width: 100%;
+    font-size: 0.9em; /* Reduce font size on smaller screens */
+    padding: 10px; /* Reduce padding on smaller screens */
   }
+
 
   .menu li {
     margin-right: 1rem;
