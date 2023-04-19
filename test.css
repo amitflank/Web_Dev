@@ -194,3 +194,10 @@ button:hover {
     width: 30px;
   }
 }
+@media (max-width: 480px) {
+  img {
+    max-width: 100%;
+    height: auto;
+    margin: 5px; /* adjust this value as needed */
+  }
+}
