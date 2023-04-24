@@ -1,0 +1,149 @@
+body{
+    background-color: #eff2f9;
+}
+
+header {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+main{
+    width: 65%;
+    margin-left: 5%;
+    padding-top: 2%;
+    float: left;
+}
+
+aside{
+    width: 25%;
+    float: right;
+    padding: 2%;
+    background-color: rgb(124, 37, 37);
+    color: white;
+}
+
+aside p {
+    font-size: large;
+}
+
+
+#index {
+    background-image: url("picutres/ex1.png");
+}
+
+nav {
+    width: 90%;
+    height: 40px;
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+    background-image: url("picutres/ex.png");
+    background-size: contain;
+}
+
+
+nav a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 15px;
+    vertical-align: middle;
+    text-align: center;
+  
+}
+
+.res_head{
+    margin: auto;
+    text-align: center;
+}
+
+
+#basics {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    width: 25%;
+    height: 400;
+    padding-bottom: 5%;
+  }
+  
+.resume_pic {
+    max-width: 75%;
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 20px;
+    min-height: 81px;
+    min-width: 81px;
+}
+
+.contact_info {
+    display: flex;
+    flex-direction: column;
+}
+  
+#contact {
+    font-size: 24px;
+    text-align: right;
+    color: #333;
+    margin: 0;
+    flex-grow: 1;
+}
+
+
+#contact_details {
+    text-align: right;
+    color: #333;
+    margin: 0;
+    line-height: 1.5;
+}
+
+#rect{
+    display: flex;
+    align-items: center;
+}
+
+#rect img{
+    width: 42;
+    height: 42;
+    padding-right: 3%;
+}
+
+rect h5{
+    float: right;
+}
+
+#entry{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+#date{
+    padding-right: 3%;
+}
+
+#description{
+    float: right;
+}
+
+@media only all and (max-width: 768px) {
+    main{
+        width: 85%;
+        margin-left: 5%;
+        padding-top: 2%;
+        padding-bottom: 5%;
+        float: none;
+    }
+    aside{
+        width: 85%;
+        float: none;
+        clear: both;
+        margin: auto;
+        padding: 2%;
+        background-color: rgb(124, 37, 37);
+        color: white;
+    }
+
+}
